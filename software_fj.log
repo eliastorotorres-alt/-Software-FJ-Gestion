@@ -1,0 +1,28 @@
+2026-11-21 20:04:49,320 | INFO     | ===== INICIO DE LA SIMULACIÓN =====
+2026-11-21 20:04:49,320 | INFO     | Cliente registrado: Cliente #1: Ana Pérez | Doc: 1012345678 | ana@correo.com | Tel: 3001234567
+2026-11-21 20:04:49,320 | ERROR    | Registro de cliente fallido: Correo inválido: 'luis#correo'
+2026-11-21 20:04:49,320 | ERROR    | Registro de cliente fallido: Faltan datos del cliente: telefono, documento
+2026-11-21 20:04:49,320 | INFO     | Cliente registrado: Cliente #2: Mario Díaz | Doc: 52123456 | mario@correo.com | Tel: 3205551234
+2026-11-21 20:04:49,320 | INFO     | Servicio creado: Sala 'Sala Ejecutiva' (capacidad 25) - $50,000/h
+2026-11-21 20:04:49,320 | ERROR    | Creación de servicio fallida (AlquilerEquipo): La tarifa por hora debe ser positiva: -10
+2026-11-21 20:04:49,320 | INFO     | Servicio creado: Equipo 'Video Beam' (Proyector, con depósito) - $20,000/h
+2026-11-21 20:04:49,320 | INFO     | Servicio creado: Asesoría 'Asesoría Cloud' en Arquitectura Cloud (nivel experto) - $90,000/h
+2026-11-21 20:04:49,321 | ERROR    | Creación de servicio fallida (AsesoriaEspecializada): Nivel inválido 'maestro'. Use: junior, senior, experto
+2026-11-21 20:04:49,321 | INFO     | Reserva #1 creada (pendiente).
+2026-11-21 20:04:49,321 | INFO     | Reserva #1 confirmada. Costo: $214,200.00
+2026-11-21 20:04:49,321 | INFO     | Fin de procesamiento de reserva #1 (estado: Confirmada)
+2026-11-21 20:04:49,321 | INFO     | Reserva #2 creada (pendiente).
+2026-11-21 20:04:49,321 | ERROR    | Reserva #2 no pudo calcularse: Una sala se reserva de 1 a 8 horas. | causa: ServicioInvalidoError('Una sala se reserva de 1 a 8 horas.')
+2026-11-21 20:04:49,321 | INFO     | Fin de procesamiento de reserva #2 (estado: Fallida)
+2026-11-21 20:04:49,321 | INFO     | Reserva #3 creada (pendiente).
+2026-11-21 20:04:49,321 | ERROR    | Reserva #3 fallida: El servicio 'Video Beam' no está disponible.
+2026-11-21 20:04:49,321 | INFO     | Fin de procesamiento de reserva #3 (estado: Fallida)
+2026-11-21 20:04:49,321 | INFO     | Reserva #4 creada (pendiente).
+2026-11-21 20:04:49,321 | INFO     | Reserva #4 confirmada. Costo: $385,560.00
+2026-11-21 20:04:49,321 | INFO     | Fin de procesamiento de reserva #4 (estado: Confirmada)
+2026-11-21 20:04:49,321 | INFO     | Reserva #4 cancelada.
+2026-11-21 20:04:49,321 | ERROR    | Reserva inválida: La reserva requiere un Cliente válido.
+2026-11-21 20:04:49,321 | INFO     | Reserva #5 creada (pendiente).
+2026-11-21 20:04:49,321 | ERROR    | Reserva #5 no pudo calcularse: Descuento fuera de rango [0 a 50 %]: 90 % | causa: CalculoInconsistenteError('Descuento fuera de rango [0 a 50 %]: 90 %')
+2026-11-21 20:04:49,321 | INFO     | Fin de procesamiento de reserva #5 (estado: Fallida)
+2026-11-21 20:04:49,321 | INFO     | ===== FIN DE LA SIMULACIÓN (18 operaciones) =====
